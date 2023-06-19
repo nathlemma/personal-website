@@ -1,73 +1,94 @@
-.container{
-    display: flex;
-    justify-content: center;
+@font-face {
+  font-family: flappybird;
+  src: url("http://www.mediafont.com/storage/contents/3184/font.eot"); /* IE */
+  src: url("http://www.mediafont.com/storage/contents/3184/04B_19__.TTF"); /* non-IE */
 }
 
-
-.right{
-background-color: black;
+body {
+  background-color: black;
 }
 
-.left{
-background-color: black;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
+h1 {
+  text-align: center;
+  font-family: flappybird, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: antiquewhite;
+}
+
+p {
+  text-align: center;
+  font-family: flappybird, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: antiquewhite;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.right {
+  background-color: black;
+}
+
+.left {
+  background-color: black;
+}
 
 .play-ground {
-    width: 500px;
-    height: 750px; 
-    position: absolute;
+  width: 500px;
+  height: 750px;
+  position: absolute;
 }
 
 .sky {
-    background-image: url(/projects/flappy-bird/source/sky.png);
-    width: 500px;
-    height: 580px;
-    position: absolute;
+  background-image: url(/projects/flappy-bird/source/sky.png);
+  width: 500px;
+  height: 580px;
+  position: absolute;
 }
 
-.ground{
-    background-image: url(/projects/flappy-bird/source/ground.png);
-    width: 500px;
-    height: 170px;
-    position: absolute;
-    top: 580px;
+.ground {
+  background-image: url(/projects/flappy-bird/source/ground.png);
+  width: 500px;
+  height: 170px;
+  position: absolute;
+  top: 580px;
 }
 
-
-.bird{
-    width: 60px;
-    height: 45px;
-    position: absolute;
-    background-image: url(/projects/flappy-bird/source/bird.png);
+.bird {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  background-image: url(/projects/flappy-bird/source/bird.png);
 }
 
-.obstacle{
-    width: 60px; 
-    height: 300px;
-    position: absolute;
-    background-image: url(/projects/flappy-bird/source/pipe.png);
+.obstacle {
+  width: 60px;
+  height: 300px;
+  position: absolute;
+  background-image: url(/projects/flappy-bird/source/pipe.png);
 }
 
-.topObstacle{
-    width: 60px; 
-    height: 300px;
-    position: absolute;
-    background-image: url(/projects/flappy-bird/source/pipe.png);
-    transform: rotate(180deg);
+.topObstacle {
+  width: 60px;
+  height: 300px;
+  position: absolute;
+  background-image: url(/projects/flappy-bird/source/pipe.png);
+  transform: rotate(180deg);
 }
 
-.left-boarder{
-    height: 750px;
-    width: 70px;
+.left-boarder {
+  height: 750px;
+  width: 70px;
 }
 
-.settings{
-    background-color: bisque;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 700px;
+.settings {
+  background-color: bisque;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 700px;
 }
-
-
